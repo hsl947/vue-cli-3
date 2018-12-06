@@ -1,9 +1,19 @@
-# vue-cli3
+# vue-cli3 demo
 
+> First, you have to do it.
 ## Project setup
 ```
 npm install
 ```
+
+> Then,you can open vue-cli3 graphical interface.
+
+### A full graphical user interface to create and manage Vue.js projects.
+```
+vue ui
+```
+
+> Or you can do like vue-cli2 before
 
 ### Compiles and hot-reloads for development
 ```
@@ -19,5 +29,5 @@ npm run build
 ```
 npm run lint
 ```
-## 项目使用方法
-#打包后，把public下的整个wap目录删掉，把dist文件夹下的wap目录整个剪切过去，上传即可。
+
+
