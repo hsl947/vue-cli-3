@@ -32,7 +32,7 @@ const router = new VueRouter({
       name: 'register',
       component: resolve => require(["../views/register"], resolve),
       meta: {
-        index: 1,
+        index: 2,
         title: '注册',
         // requireAuth: true
       },
