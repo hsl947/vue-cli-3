@@ -29,7 +29,7 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
     response => {
         // 检测某种状态进行重定向
-        if (response.data.code === 1002 || response.data.code === 2014 ) {
+        if (response.data.code === 401) {
             store.commit('delToken'); //清空token
             Router.replace({
                 name: 'login',

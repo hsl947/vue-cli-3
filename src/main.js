@@ -4,14 +4,6 @@ import router from "./route";
 import store from "./store";
 import axios from './utils/axios'
 
-//复制功能组件
-import VueClipboard from 'vue-clipboard2'
-Vue.use(VueClipboard)
-
-//vant的toast组件
-import { Toast } from 'vant';
-import 'vant/lib/index.css';
-Vue.use(Toast);
 
 //消除手机上的300ms延迟
 import FastClick from "fastclick";
@@ -34,9 +26,6 @@ Vue.prototype.$extend = function (target, options) {
   }
   return target;
 };
-
-//未登陆时的token
-localStorage.setItem('common_key', 'a0jDdd9Wto');
 
 new Vue({
   router,
