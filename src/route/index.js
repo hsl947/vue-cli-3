@@ -42,6 +42,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
   if (to.matched.some(r => r.meta.requireAuth)) {
   //这里的requireAuth为路由中定义的 meta:{requireAuth:true}，
   //意思为：该路由添加该字段，表示进入该路由需要登陆的

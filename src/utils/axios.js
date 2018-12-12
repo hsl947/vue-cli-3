@@ -10,8 +10,10 @@ if (localStorage.getItem('token')) {
 
 let configs = {
     timeout: 10000,
-    api: process.env.VUE_APP_BASE_API
+    api: '/sapi'
 }
+
+// axios.defaults.headers['auth_key'] = 'a0jDdd9Wto';
 
 // 添加请求拦截器
 axios.interceptors.request.use(
