@@ -8,9 +8,11 @@ if (localStorage.getItem('token')) {
     store.commit('setToken', localStorage.getItem('token'))
 }
 
+//开发环境和生产环境不一样，开发环境需使用代理。
+let baseUrl = process.env.NODE_ENV == 'development' ? '/sapi': '';
 let configs = {
     timeout: 10000,
-    api: '/sapi'
+    api: baseUrl + '/sapi'
 }
 
 // axios.defaults.headers['auth_key'] = 'a0jDdd9Wto';

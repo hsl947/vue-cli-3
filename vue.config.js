@@ -2,7 +2,7 @@
 * @Author: Hong
 * @Date:   2018-12-03 11:26:53
 * @Last Modified by:   Hong
-* @Last Modified time: 2018-12-12 17:31:14
+* @Last Modified time: 2018-12-13 16:41:25
 */
 module.exports = {
   baseUrl: "./", // 部署应用时的根路径(默认'/'),也可用相对路径(存在使用限制)
@@ -47,7 +47,7 @@ module.exports = {
     open: true, //配置自动启动浏览器
     proxy: {
       '/sapi': {
-          target: 'http://zm.xinjuhao.net/sapi',
+          target: 'http://zm.xinjuhao.net',
           changeOrigin: true,
           ws: true,
           pathRewrite: {
